@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿ Es posible venderle un OPPO a un cliente que prefiere Iphone ?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- LOBBY DE ESPERA -->
+    <div id="lobby-screen">
+        <div class="lobby-content">
+            <h1>Sala de Espera Élite</h1>
+            <p>La presentación comenzará en breve. Por favor, activa el audio para amenizar la espera.</p>
+            <div class="lobby-controls">
+                <button id="join-audio-btn" class="cta-btn">🎧 Activar Música</button>
+                <button id="start-presentation-btn" class="cta-btn hidden">🚀 Iniciar Presentación</button>
+            </div>
+            <audio id="waiting-music" loop>
+                <source src="assets/musica.mp3" type="audio/mpeg">
+                <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main-presentation" class="hidden-presentation">
+        
+        <section class="hero snap-section">
+            <div class="section-content">
+                <h1>¿ Es posible venderle un OPPO a un cliente que prefiere Iphone ?</h1>
+                <p class="welcome-message">"Bienvenido, Élite. Hoy descubriremos cómo conectar con el deseo real del usuario para cambiar su decisión de compra en el punto de venta."</p>
+                <div class="scroll-indicator">↓ Desliza para continuar ↓</div>
+            </div>
+        </section>
+
+        <section class="comparison snap-section">
+            <div class="section-content">
+                <h2>La Verdad en los Números</h2>
+                <div class="image-container">
+                    <img src="assets/ficha tecnica.jpeg" alt="Ficha Técnica" class="responsive-img shadow-img">
+                </div>
+                <p class="conclusion">La ficha técnica demuestra una superioridad absoluta del Reno 16F en hardware.</p>
+            </div>
+        </section>
+
+        <section class="inflection snap-section">
+            <div class="section-content">
+                <div class="quote-box">
+                    <blockquote>"Si has atendido a un usuario en PDV, sabes que sirve de poco mostrarle con números por qué comprar un OPPO es una mejor opción; al final terminan eligiendo iPhone. Por lo tanto, exploremos qué es lo que realmente motiva al cliente a elegir iPhone a pesar de que tú y el cliente saben que no es su mejor opción."</blockquote>
+                    <button id="brain-cta" class="cta-btn">🔍 Viajar al Cerebro del Cliente</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transition overlay for GIF -->
+        <div id="transition-overlay" class="hidden">
+            <img src="assets/entrando a la mente del cliente.gif" alt="Entrando a la mente" id="transition-gif">
+        </div>
+
+        <section id="brain-journey" class="snap-section hidden-section">
+            <div class="section-content">
+                <h2>¿Por qué el cliente elige iPhone?</h2>
+                <div class="brain-interactive">
+                    <div class="brain-graphic">
+                        <img src="assets/cerebro.jpeg" alt="Cerebro del Cliente" class="brain-img">
+                        <!-- Nodos ajustados hacia la posición visual de los focos en la imagen proporcionada -->
+                        <div class="node" data-target="estatus" style="top: 25%; left: 28%;">1</div>
+                        <div class="node" data-target="fidelidad" style="top: 25%; left: 72%;">2</div>
+                        <div class="node" data-target="tendencia" style="top: 65%; left: 20%;">3</div>
+                        <div class="node" data-target="innovacion" style="top: 65%; left: 80%;">4</div>
+                    </div>
+                    <div class="node-details">
+                        <div id="estatus" class="detail-card hidden">
+                            <h3>Estatus y Pertenencia Social</h3>
+                            <p>El comprador busca la validación, sofisticación y prestigio social asociados a la marca Apple.</p>
+                        </div>
+                        <div id="fidelidad" class="detail-card hidden">
+                            <h3>Fidelidad a la marca y ecosistema</h3>
+                            <p>Alta retención por costumbre, integración de servicios y arraigo al ecosistema.</p>
+                        </div>
+                        <div id="tendencia" class="detail-card hidden">
+                            <h3>Moda y tendencia cultural</h3>
+                            <p>El dispositivo funciona como un accesorio de estilo de vida impulsado por la cultura pop y redes sociales.</p>
+                        </div>
+                        <div id="innovacion" class="detail-card hidden">
+                            <h3>Innovación percibida</h3>
+                            <p>Percepción de liderazgo continuo en avances tecnológicos y calidad de construcción.</p>
+                        </div>
+                        <p id="initial-instruction" style="font-style: italic; color: #7f8c8d;">Haz clic en los nodos cerebrales para explorar las verdaderas motivaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: ESTRATEGIA DE MIGRACIÓN -->
+        <section class="migration-strategy snap-section">
+            <div class="section-content">
+                <h2>Hackeando la Decisión de Compra</h2>
+                <p class="strategy-subtitle">Estrategia de Migración Comercial en PDV: Abordaje Emocional</p>
+                
+                <div class="speech-steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Validar y Empatizar <br><small>(Cero Confrontación)</small></h3>
+                        <p>"¡Excelente elección! Con la baja de precio que tiene hoy el iPhone, es totalmente normal que llame la atención. Es un equipo súper reconocido y con un diseño muy limpio."</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Descubrir la Necesidad <br><small>(El Deseo Real)</small></h3>
+                        <p>"Pregunta rápida para el uso que le vas a dar en tu día a día: ¿buscas el teléfono principalmente para fotos de retrato tipo estudio para tus redes sociales, o lo que más te preocupa es no quedarte sin batería a mitad de la jornada?"</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Introducir Reno 16F <br><small>(Tendencia 2026)</small></h3>
+                        <p>"Coincido totalmente. Precisamente hoy la tendencia en tecnología premium no es quedarse atado a un modelo de generación anterior solo por el logo, sino estrenar la máxima innovación en fotografía e IA del año. Regálame 30 segundos y déjame mostrarte algo en vivo que te va a sorprender..."</p>
+                    </div>
+                </div>
+
+                <div class="trojan-container">
+                    <h3>El Caballo de Troya: Rompiendo la Barrera del Ecosistema</h3>
+                    <div class="image-container trojan-img-container">
+                        <img src="assets/barrera del ecosistema.jpeg" alt="Barrera del ecosistema" class="responsive-img shadow-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="arsenal snap-section">
+            <div class="section-content">
+                <h2>Manejo de objeciones y argumentos de peso</h2>
+                <div class="modules-grid">
+                    <div class="module objection-module">
+                        <h3>1. Ecosistema</h3>
+                        <p>Cuando un cliente te dice: "Siempre he utilizado iPhone o utilizo iPhone por el ecosistema".</p>
+                        <p><strong>Respuesta:</strong> Utilizamos O+connect "el caballo de troya".</p>
+                        <button class="view-asset-btn" data-img="assets/o+ conect.jpeg">Ver Evidencia</button>
+                    </div>
+
+                    <div class="module objection-module">
+                        <h3>2. Cámara</h3>
+                        <p>Cuando un cliente te dice: "Busco iPhone por la cámara".</p>
+                        <p><strong>Respuesta:</strong> "Mis respetos para iPhone, pero si te digo que existe un teléfono con una mejor cámara, ¿te interesa saber cuál es?"</p>
+                        <button class="view-asset-btn" data-img="assets/comparaviva de sensores.jpeg">Ver Evidencia</button>
+                    </div>
+
+                    <div class="module objection-module">
+                        <h3>3. Creadores / Redes</h3>
+                        <p>Cuando un cliente te dice que compra iPhone por la compatibilidad en redes o crea contenido.</p>
+                        <p><strong>Respuesta:</strong> Utiliza el argumento de las herramientas de edición profesional y la ventaja de la compatibilidad en redes.</p>
+                        <button class="view-asset-btn" data-img="assets/Creadores.jpeg">Ver Evidencia</button>
+                    </div>
+
+                    <div class="module objection-module">
+                        <h3>4. Trabajo / Productividad</h3>
+                        <p>Cuando un cliente te dice que compra iPhone por su trabajo.</p>
+                        <p><strong>Respuesta:</strong> Muéstrale las herramientas de productividad y la IA superior.</p>
+                        <button class="view-asset-btn" data-img="assets/IA superiror.jpeg">Ver Evidencia</button>
+                    </div>
+
+                    <div class="module objection-module">
+                        <h3>5. Sistema Fluido</h3>
+                        <p>Cuando un cliente te dice que compra iPhone por el sistema fluido y porque no se traba.</p>
+                        <p><strong>Respuesta:</strong> Menciona nuestra capa de personalización y cómo es más fluida incluso que iPhone.</p>
+                        <button class="view-asset-btn" data-img="assets/trinity.jpeg">Ver Evidencia</button>
+                    </div>
+
+                    <div class="module objection-module">
+                        <h3>6. Diseño</h3>
+                        <p>Cuando un cliente elige iPhone por su estética y diseño convencional.</p>
+                        <p><strong>Respuesta:</strong> Menciona el diseño único y espectacular del Reno 16F (Diseño Galáctico 3D), diseñado para robar miradas.</p>
+                        <button class="view-asset-btn" data-img="assets/diseño.jpeg">Ver Evidencia</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="value-money snap-section">
+            <div class="section-content">
+                <h2>Valor por tu dinero</h2>
+                <div class="image-container">
+                    <img src="assets/3 pasos.jpeg" alt="3 Pasos" class="responsive-img shadow-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="attendance snap-section">
+            <div class="section-content text-center">
+                <h2>Confirma tu Asistencia</h2>
+                <p>Escanea el código QR para registrar tu participación Élite.</p>
+                <div class="qr-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://docs.google.com/forms/d/e/1FAIpQLSdz8REHImfm2EJekqzyp-IA6g-x_Eu-o9INFh3FPutsMuN-1A/viewform?usp=publish-editor" alt="QR Asistencia" class="qr-img shadow-img">
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdz8REHImfm2EJekqzyp-IA6g-x_Eu-o9INFh3FPutsMuN-1A/viewform?usp=publish-editor" target="_blank" class="cta-btn" style="text-decoration: none; display: inline-block;">📝 Abrir Formulario</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal for Assets -->
+    <div id="image-modal" class="modal hidden">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
